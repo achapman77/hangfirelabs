@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '4.0.7'
 
 group :production do
  gem 'pg'
@@ -15,6 +15,7 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
+gem 'bootstrap-sass', '~> 3.1.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -38,6 +39,9 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+# Security/vulnerability gem http://brakemanscanner.org/docs/install/
+gem "brakeman", :require => false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
